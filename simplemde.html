@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/simplemde.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+	<!--<script src="js/simplemde.min.js"></script>-->
+	<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+</head>
+<body>
+	<div style="z-index: 0">
+		<textarea id="inputor" autofocus class="form-control"></textarea>
+	</div>
+	<div id="hintDiv" tabindex="-1" style="background-color: #E3E3E3; padding: 0px; display: none;z-index: 100">
+		<form  tabindex="-1" id="hintForm" action="javascript;">
+			<select id="hintSel" tabindex="-1" autofocus multiple class="form-control">	
+    		<option id="first" value="1">One</option>
+    		<option value="2">Two</option>
+    		<option value="three">Three</option>
+			</select>
+		</form>
+	</div>
+<script type="text/javascript" src="js/hintView.js"></script>
+</body>
+</html>
